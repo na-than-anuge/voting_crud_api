@@ -5,7 +5,7 @@ import { AdminService } from './admin.service';
 import { Candidates } from '../candidate.entity';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([Candidate])],
+  imports: [TypeOrmModule.forFeature([Candidates])],
   controllers: [AdminController],
   providers: [AdminService],
 })
