@@ -6,8 +6,8 @@ import { Candidates } from '../candidate.entity';
 @Injectable()
 export class AdminService {
   constructor(
-    @InjectRepository(Candidate)
-    private candidateRepository: Repository<Candidate>,
+    @InjectRepository(Candidates)
+    private candidateRepository: Repository<Candidates>,
   ) {}
 
   async getAllCandidates() {
