@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AdminModule } from './admin/admin.module';
 import { UserModule } from './user/user.module';
-import { Candidate } from '../src/admin/candidate.entity'; // Correct import path
+import { Candidates } from './candidate.entity';
 
 @Module({
   imports: [
@@ -13,7 +13,7 @@ import { Candidate } from '../src/admin/candidate.entity'; // Correct import pat
       username: 'root',
       password: '',
       database: 'voting_app',
-      entities: [Candidate], // Include the Candidate entity
+      entities: [Candidates],
       synchronize: true,
     }),
     AdminModule,
